@@ -49,7 +49,7 @@ header > h1 {
 header > p {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.669);
     text-align: center;
-    margin-top: 15px;
+    margin-top: 8px;
     
     
 }
@@ -71,6 +71,7 @@ nav > a {
 }
 nav > a:hover {
     background-color: #034924;
+    color: #16C56D;
     
 }
 
@@ -80,24 +81,27 @@ main {
     max-width: 800px;
    
     margin: auto;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.464);
     border-radius: 0px 0px 10px 10px;
 }
 
 main img {
-     width: 100%;
+    
+    width: 100%;
 }
 article > h1{
     font: normal bold 1.5em 'idroid';
     color: #247c4d;
     padding: 10px 0px 0px 10px;
+    
 }
 .fonte {
     font: normal bold 1.5em 'idroid';
     color: #247c4d;
-    box-shadow: inset -1px 2px 10px #0b4e2aa8;
-    
+    background-image: linear-gradient(to right, #1bf085ac, transparent);
+    border-radius: 10px;
+    text-indent: 8px;
 }
  main p {
     line-height: 1.6em;
@@ -106,19 +110,31 @@ article > h1{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-#video {
+
+div {
     background-color: #0b4e2a;
-    height: 400px;
-    margin: 0px;
-    padding: 0px;
-}
-iframe {
-    margin: 43px 50px 50px 125px;
+
+   margin: 30px -20px 30px -20px;
+
+   padding: 60px;
+   padding-bottom: 51.5%;
+    
+   position: relative;
+    
 }
 
-.sectionv {
-    margin: 0px -10px 0px -10px;
+iframe {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.689);
+    
 }
+
+
 .bugdroid {
     display: block;
     margin: auto;
@@ -153,13 +169,15 @@ aside {
     margin: 20px 0px 0px 0px;
     text-indent: 20px;
     padding-bottom: 20px;
+    text-align: justify;
 }
 footer {
     background-color: #0b4e2a;
-    margin-top: 12px;
+    margin-top: 20px;
     text-align: center;
     color: rgb(223, 222, 222);
     font: normal normal 0.75em arial;
+    padding: 5px;
 }
 footer > strong {
     color: white;
@@ -169,6 +187,16 @@ strong {
 }
 .link {
     text-decoration: none;
-    color: #1c613c;
+    color: #247c4d;
+    font-weight: bolder;
+    padding: 0px 3px;
+}
 
+.link:hover {
+    text-decoration: underline;
+    color: #16C56D;
+}
+
+.link::after {
+    content: '\00A0\1F517';
 }
